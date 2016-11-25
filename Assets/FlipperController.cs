@@ -51,6 +51,7 @@ public class FlipperController : MonoBehaviour {
         jointSpr.targetPosition = angle;
         this.myHingeJoint.spring = jointSpr;
     }
+    //以下、画面をタッチされた時の処理
     public void GetMyLHalfDown()
     {
         lHalfDown = true;

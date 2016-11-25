@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class BallController : MonoBehaviour {
 
@@ -20,4 +21,8 @@ public class BallController : MonoBehaviour {
             this.gameoverText.GetComponent<Text>().text = "GAME OVER";
         }
 	}
+    public void RestartButtonDown()
+    {
+        SceneManager.LoadScene("GameScene");
+    }
 }
